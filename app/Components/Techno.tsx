@@ -35,10 +35,13 @@ export default function Techno() {
 
           <div className="relative py-6 md:w-[calc(100%-11rem)] overflow-hidden">
             {/* Slider */}
-            <div className="animate-slide flex gap-28 w-max">
+            <div className="animate-slide flex gap-20 w-max">
               {[...icons, ...icons].map((Icon, i) => (
-                <div key={i} className="flex items-center justify-center">
-                  <Icon className="h-6 w-6 text-black/70 dark:text-white/80 hover:text-black dark:hover:text-white transition-colors duration-200" />
+                <div
+                  key={i}
+                  className="w-16 h-16 bg-[#1a1b26] rounded-xl flex items-center justify-center shadow hover:scale-105 transition-transform"
+                >
+                  <Icon className="h-8 w-8 text-white/90" />
                 </div>
               ))}
             </div>

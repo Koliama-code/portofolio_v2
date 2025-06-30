@@ -1,3 +1,4 @@
+"use client";
 import Header from "./Components/Header";
 import Hero from "./Components/Hero";
 import { StackedCircularFooter } from "./Components/Footer/StackedCircularFooter";
