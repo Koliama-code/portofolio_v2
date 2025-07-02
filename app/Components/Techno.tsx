@@ -41,7 +41,7 @@ export default function Techno() {
               {allIcons.map(({ Icon, name }, i) => (
                 <div
                   key={i}
-                  className="w-16 h-16 bg-[#1e293b] rounded-xl flex items-center justify-center shadow hover:scale-105 transition-transform"
+                  className="w-16 h-16 bg-[#1a1b26] rounded-xl flex items-center justify-center shadow hover:scale-105 transition-transform"
                   title={name}
                 >
                   <Icon className="h-8 w-8 text-white" />
@@ -49,7 +49,6 @@ export default function Techno() {
               ))}
             </div>
 
-            {/* Fondu gauche/droite */}
             <div className="absolute inset-y-0 left-0 w-20 pointer-events-none bg-gradient-to-r from-white to-transparent dark:from-black" />
             <div className="absolute inset-y-0 right-0 w-20 pointer-events-none bg-gradient-to-l from-white to-transparent dark:from-black" />
           </div>

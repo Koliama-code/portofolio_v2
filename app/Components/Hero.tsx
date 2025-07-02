@@ -9,8 +9,8 @@ const Hero = () => {
       <div className="container px-4 mx-auto relative">
         <div className="grid grid-cols-12 gap-6 items-center">
           {/* Image */}
-          <div className="col-span-12 lg:col-span-5 xl:col-span-4 xl:col-start-2 text-center lg:text-start">
-            <div className="w-78 h-78 mx-auto overflow-hidden rounded-full border-[8px] border-white dark:border-slate-800 shadow-2xl">
+          <div className="col-span-12 lg:col-span-5  xl:col-span-4 xl:col-start-2 text-center lg:text-start">
+            <div className="w-78 h-78 lg:mx-18 overflow-hidden rounded-full border-[8px] border-white shadow-2xl sm:mt-12 mx-auto">
               {" "}
               <Image
                 src={logo}
@@ -30,26 +30,26 @@ const Hero = () => {
               </p>
               <h1 className="text-gray-600 text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
                 Hello, moi c’est <br />
-                <span className="text-[#1e293b] ">Geek_dieud</span>
+                <span className="text-[#1e293b] ">Geek_dieud 👋</span>
               </h1>
               <p className="text-lg md:text-xl text-zinc-600 dark:text-zinc-300 max-w-xl mx-auto lg:mx-0">
                 Je conçois des interfaces modernes, intuitives et performantes
                 avec passion. Curieux, créatif et toujours à la recherche de
-                solutions élégantes.
+                solutions élégantes. 🔥📚✨
               </p>
 
               <div className="mt-8 flex flex-wrap justify-center lg:justify-start gap-4">
                 <a
                   href="#!"
-                  className="bg-[#1e293b] text-white py-3 px-8 rounded-lg hover:bg-[#1e293b]-600 transition-all flex items-center gap-2"
+                  className="bg-[#1e293b] text-white py-3 px-8 rounded-lg hover:bg-[#0b1727] transition-all flex items-center gap-2"
                 >
-                  Télécharger mon CV <ArrowRight className="w-4 h-4" />
+                  📂 Télécharger mon CV <ArrowRight className="w-4 h-4" />
                 </a>
                 <a
-                  href="#contact"
-                  className="border-2 border-[#1e293b]  py-3 px-8 rounded-lg hover:bg-[#1e293b] hover:text-white transition-all flex items-center gap-2"
+                  href="mailto:nathanaelkoliama@gmail.com"
+                  className="border-2 border-[#0b1727]  py-3 px-8 rounded-lg hover:bg-[#1e293b] hover:text-white transition-all flex items-center gap-2"
                 >
-                  Me contacter <ArrowRight className="w-4 h-4" />
+                  ✉️ Me contacter <ArrowRight className="w-4 h-4" />
                 </a>
               </div>
             </div>

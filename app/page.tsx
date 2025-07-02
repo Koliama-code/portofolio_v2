@@ -3,6 +3,7 @@ import Header from "./Components/Header";
 import Hero from "./Components/Hero";
 import { StackedCircularFooter } from "./Components/Footer/StackedCircularFooter";
 import Techno from "./Components/Techno";
+import { Contact } from "./Components/Contact";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Header />
       <Hero />
       <Techno />
+      <Contact />
       <StackedCircularFooter />
     </main>
   );

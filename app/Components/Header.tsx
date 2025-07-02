@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
@@ -11,14 +11,28 @@ const menuItems = [
 ];
 
 export const Header = () => {
-  const [menuState, setMenuState] = React.useState(false);
+  const [menuState, setMenuState] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <header>
       <nav
         data-state={menuState && "active"}
-        className="group bg-background fixed z-20 w-full border-b backdrop-blur-3xl p-3"
+        className={`group fixed z-20 w-full p-3 backdrop-blur-3xl bg-[#0b1727] transition-all duration-500 ease-in-out transform ${
+          scrolled
+            ? "bg-opacity-100 border-b  translate-y-0 opacity-98"
+            : "bg-opacity-90 border-b border-transparent -translate-y-2 opacity-100"
+        }`}
       >
-        <div className="mx-auto max-w-6xl px-6 transition-all duration-300">
+        <div className="mx-auto max-w-6xl px-6">
           <div className="relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
             <div className="flex w-full items-center justify-between gap-12 lg:w-auto">
               <Link
@@ -39,14 +53,14 @@ export const Header = () => {
               </button>
             </div>
 
-            <div className="bg-background group-data-[state=active]:block lg:group-data-[state=active]:flex mb-6 hidden w-full flex-wrap items-center justify-end space-y-8 rounded-3xl border p-6 shadow-2xl shadow-zinc-300/20 md:flex-nowrap lg:m-0 lg:flex lg:w-fit lg:gap-6 lg:space-y-0 lg:border-transparent lg:bg-transparent lg:p-0 lg:shadow-none dark:shadow-none dark:lg:bg-transparent">
+            <div className="group-data-[state=active]:block lg:group-data-[state=active]:flex mb-6 hidden w-full flex-wrap items-center justify-end space-y-8 rounded-3xl border p-6 shadow-2xl shadow-zinc-300/20 md:flex-nowrap lg:m-0 lg:flex lg:w-fit lg:gap-6 lg:space-y-0 lg:border-transparent lg:bg-transparent lg:p-0 lg:shadow-none dark:shadow-none dark:lg:bg-transparent">
               <div className="lg:hidden">
-                <ul className="space-y-6 text-base ">
+                <ul className="space-y-6 text-base">
                   {menuItems.map((item, index) => (
                     <li key={index}>
                       <Link
                         href={item.href}
-                        className="text-muted-foreground  hover:text-accent-foreground block duration-150"
+                        className="text-muted-foreground hover:text-accent-foreground block duration-150"
                       >
                         <span>{item.name}</span>
                       </Link>
@@ -75,4 +89,5 @@ export const Header = () => {
     </header>
   );
 };
+
 export default Header;
