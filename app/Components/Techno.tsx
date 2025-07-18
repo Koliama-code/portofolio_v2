@@ -26,7 +26,7 @@ export default function Techno() {
       <div className="relative m-auto max-w-6xl px-6">
         <div className="flex flex-col items-center md:flex-row">
           <div className="md:max-w-44 md:border-r md:pr-6 border-black/10 dark:border-white/10">
-            <h1 className="text-end text-xl font-bold text-black/70 dark:text-white/70 leading-tight">
+            <h1 className="text-center text-xl font-bold text-black/70 dark:text-white/70 leading-tight">
               Stack technologique
               <br />
               <span className="text-sm font-normal text-black/50 dark:text-white/50">

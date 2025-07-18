@@ -26,7 +26,7 @@ const Hero = () => {
           <div className="col-span-12 lg:col-span-7 xl:col-start-6 lg:pl-6 xl:pl-12 text-center lg:text-start">
             <div className="flex flex-col justify-center h-full">
               <p className="text-[#1e293b] font-medium uppercase tracking-wider mb-2">
-                Développeur Web & UI Designer
+                Développeur Web & UI/UX Designer
               </p>
               <h1 className="text-gray-600 text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
                 Hello, moi c’est <br />
