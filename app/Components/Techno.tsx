@@ -7,6 +7,8 @@ import {
   SiTypescript,
   SiTailwindcss,
   SiFigma,
+  SiWordpress
+
 } from "react-icons/si";
 
 const techIcons = [
@@ -16,6 +18,8 @@ const techIcons = [
   { name: "TypeScript", Icon: SiTypescript },
   { name: "Tailwind CSS", Icon: SiTailwindcss },
   { name: "Figma", Icon: SiFigma },
+  { name: "Wordpress", Icon: SiWordpress },
+
 ];
 
 export default function Techno() {
