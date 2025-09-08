@@ -48,7 +48,7 @@ function StackedCircularFooter() {
             </Button>
           </div>
           <div className="mb-8 w-full max-w-md">
-            <form className="flex space-x-2">
+            {/* <form className="flex space-x-2">
               <div className="flex-grow">
                 <Label htmlFor="email" className="sr-only">
                   Email
@@ -63,7 +63,7 @@ function StackedCircularFooter() {
               <Button type="submit" className="rounded-full">
                 Subscribe
               </Button>
-            </form>
+            </form> */}
           </div>
           <div className="text-center">
             <p className="text-sm text-muted-foreground">
