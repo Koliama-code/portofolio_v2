@@ -28,9 +28,9 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section className="py-20 bg-white dark:bg-black">
+    <section className="py-20 bg-white dark:bg-zinc-950">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-12">
+        <h2 className="text-4xl font-bold text-center text-zinc-900 dark:text-white mb-12">
           Mes projets récents 🚀
         </h2>
 
@@ -38,9 +38,11 @@ export default function Projects() {
           {projects.map((project, i) => (
             <div
               key={i}
-              className="rounded-xl border dark:border-white/10 border-zinc-200 bg-zinc-50 dark:bg-zinc-900 p-6 shadow-md hover:shadow-lg transition-shadow"
+              className="rounded-xl border dark:border-white/10 border-zinc-200 bg-white dark:bg-zinc-900 p-6 shadow-md hover:shadow-lg transition-shadow"
             >
-              <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+              <h3 className="text-xl font-semibold text-zinc-900 dark:text-white mb-2">
+                {project.title}
+              </h3>
               <p className="text-sm text-zinc-600 dark:text-zinc-300 mb-4">
                 {project.description}
               </p>
@@ -49,7 +51,7 @@ export default function Projects() {
                 {project.techs.map((tech, index) => (
                   <span
                     key={index}
-                    className="bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-0.5 rounded-full"
+                    className="bg-zinc-800 text-white dark:bg-zinc-700 dark:text-zinc-200 px-2 py-0.5 rounded-full"
                   >
                     {tech}
                   </span>
@@ -61,7 +63,7 @@ export default function Projects() {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-sm text-blue-600 dark:text-blue-400 hover:underline"
+                  className="inline-flex items-center text-sm text-zinc-600 dark:text-zinc-400 hover:underline"
                 >
                   Voir le projet <ExternalLink className="ml-1 h-4 w-4" />
                 </a>

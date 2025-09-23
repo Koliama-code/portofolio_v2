@@ -20,7 +20,7 @@ const techIcons = [
   { name: "Figma", Icon: SiFigma },
   { name: "Wordpress", Icon: SiWordpress },
 
-];
+];  
 
 export default function Techno() {
   const allIcons = [...techIcons, ...techIcons]; // repeat for infinite loop
