@@ -2,12 +2,11 @@ import React from "react";
 
 export const Contact = () => {
   return (
-    <section className="bg-white py-16 text-center">
+    <section className="bg-gray-100 dark:bg-black py-16 text-center">
       <h3 className="text-4xl text-[#1e293b] font-bold mb-4">
-     On travaille ensemble ? 🧠👨
-
+        On travaille ensemble ? 🧠👨
       </h3>
-      <p className="text-zinc-800 dark:text-gray-400 mb-6"> 
+      <p className="text-zinc-800 dark:text-gray-400 mb-6">
         Je suis ouvert à des missions freelance, collaborations ou opportunités.
       </p>
       <a
